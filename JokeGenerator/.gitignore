@@ -1,0 +1,16 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# PyCharm files
+.idea/
+
+# saved model
+JokeGenerator/result/joke_generation_saves/model
+
+# glove data
+data/joke_generation_data/*.txt
