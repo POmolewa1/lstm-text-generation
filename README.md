@@ -11,133 +11,29 @@ The project includes the full machine learning pipeline, including text preproce
 * Generated text from user-provided prompts using probabilistic sampling with temperature scaling.
 
 ## Results
-Reports with graphs are automatically generated in JokeGenerator/result/joke_generation_saves/outputs. An example of the generated report will look as follows:
+Reports with graphs are automatically generated in JokeGenerator/result/joke_generation_saves/outputs. For this specific model the results are as follows:
 
-Joke Generator Training Report
-========================================
+| Parameter | Value |
+|------------|---------|
+| Epochs | 100 |
+| Learning Rate | 0.005 |
+| Batch Size | 100 |
+| Hidden Size | 256 |
+| Embedding Size | 50 |
+| Vocabulary Size | 20,000 |
+| Max Sentence Length | 25 |
+| Optimizer | Adam |
+| Loss Function | CrossEntropyLoss(ignore_index=0) |
+| Device | CPU |
 
-Training Parameters
---------------------
-Epochs: 100
-Learning Rate: 0.005
-Batch Size: 100
-Hidden Size: 256
-Embedding Size: 50
-Vocabulary Size: 20000
-Max Sentence Length: 25
-Optimizer: Adam
-Loss Function: CrossEntropyLoss(ignore_index=0)
-Device: cpu
+- Initial Loss: 7.0326
+- Final Loss: 0.3663
+- Epochs Trained: 100
 
-Epoch 1: Loss = 7.0326
-Epoch 2: Loss = 5.6407
-Epoch 3: Loss = 5.3896
-Epoch 4: Loss = 5.1939
-Epoch 5: Loss = 5.0087
-Epoch 6: Loss = 4.8334
-Epoch 7: Loss = 4.6580
-Epoch 8: Loss = 4.5025
-Epoch 9: Loss = 4.3610
-Epoch 10: Loss = 4.2172
-Epoch 11: Loss = 4.0757
-Epoch 12: Loss = 3.9413
-Epoch 13: Loss = 3.8032
-Epoch 14: Loss = 3.6736
-Epoch 15: Loss = 3.5500
-Epoch 16: Loss = 3.3937
-Epoch 17: Loss = 3.2681
-Epoch 18: Loss = 3.1492
-Epoch 19: Loss = 3.0365
-Epoch 20: Loss = 2.9260
-Epoch 21: Loss = 2.8129
-Epoch 22: Loss = 2.6980
-Epoch 23: Loss = 2.6109
-Epoch 24: Loss = 2.5142
-Epoch 25: Loss = 2.4167
-Epoch 26: Loss = 2.3317
-Epoch 27: Loss = 2.2624
-Epoch 28: Loss = 2.1769
-Epoch 29: Loss = 2.0993
-Epoch 30: Loss = 2.0313
-Epoch 31: Loss = 1.9746
-Epoch 32: Loss = 1.8900
-Epoch 33: Loss = 1.8267
-Epoch 34: Loss = 1.7628
-Epoch 35: Loss = 1.7026
-Epoch 36: Loss = 1.6377
-Epoch 37: Loss = 1.5928
-Epoch 38: Loss = 1.5341
-Epoch 39: Loss = 1.4828
-Epoch 40: Loss = 1.4315
-Epoch 41: Loss = 1.3811
-Epoch 42: Loss = 1.3334
-Epoch 43: Loss = 1.2897
-Epoch 44: Loss = 1.2478
-Epoch 45: Loss = 1.2059
-Epoch 46: Loss = 1.1587
-Epoch 47: Loss = 1.1110
-Epoch 48: Loss = 1.0751
-Epoch 49: Loss = 1.0449
-Epoch 50: Loss = 1.0097
-Epoch 51: Loss = 0.9765
-Epoch 52: Loss = 0.9414
-Epoch 53: Loss = 0.9101
-Epoch 54: Loss = 0.8916
-Epoch 55: Loss = 0.8559
-Epoch 56: Loss = 0.8279
-Epoch 57: Loss = 0.8033
-Epoch 58: Loss = 0.7788
-Epoch 59: Loss = 0.7521
-Epoch 60: Loss = 0.7266
-Epoch 61: Loss = 0.7031
-Epoch 62: Loss = 0.6882
-Epoch 63: Loss = 0.6655
-Epoch 64: Loss = 0.6491
-Epoch 65: Loss = 0.6278
-Epoch 66: Loss = 0.6131
-Epoch 67: Loss = 0.5986
-Epoch 68: Loss = 0.5855
-Epoch 69: Loss = 0.5651
-Epoch 70: Loss = 0.5508
-Epoch 71: Loss = 0.5371
-Epoch 72: Loss = 0.5222
-Epoch 73: Loss = 0.5095
-Epoch 74: Loss = 0.4917
-Epoch 75: Loss = 0.4812
-Epoch 76: Loss = 0.4750
-Epoch 77: Loss = 0.4672
-Epoch 78: Loss = 0.4578
-Epoch 79: Loss = 0.4524
-Epoch 80: Loss = 0.4449
-Epoch 81: Loss = 0.4471
-Epoch 82: Loss = 0.4382
-Epoch 83: Loss = 0.4401
-Epoch 84: Loss = 0.4279
-Epoch 85: Loss = 0.4204
-Epoch 86: Loss = 0.4140
-Epoch 87: Loss = 0.4059
-Epoch 88: Loss = 0.4018
-Epoch 89: Loss = 0.3944
-Epoch 90: Loss = 0.3905
-Epoch 91: Loss = 0.3853
-Epoch 92: Loss = 0.3825
-Epoch 93: Loss = 0.3790
-Epoch 94: Loss = 0.3753
-Epoch 95: Loss = 0.3734
-Epoch 96: Loss = 0.3675
-Epoch 97: Loss = 0.3703
-Epoch 98: Loss = 0.3792
-Epoch 99: Loss = 0.3758
-Epoch 100: Loss = 0.3663
+![Training Loss](JokeGenerator/result/joke_generation_saves/outputs/training_loss.png)
 
-Prompt: why did the
-Generated: why did the man throw his watch out the window ? he wanted to see time fly !
---------------------------------------------------
-
-Prompt: can february march
-Generated: can february march ? no , but april the way of the
---------------------------------------------------
-
-Prompt: veto staircase build
-Generated: veto staircase build ) do you 10 ? 's ? right cold !
---------------------------------------------------
+| Prompt | Generated Text |
+|----------|---------------|
+| why did the | why did the man throw his watch out the window ? he wanted to see time fly ! |
+| can february march | can february march ? no , but april the way of the |
+| veto staircase build | veto staircase build ) do you 10 ? 's ? right cold ! |
