@@ -35,5 +35,5 @@ Reports with graphs are automatically generated in JokeGenerator/result/joke_gen
 | Prompt | Generated Text |
 |----------|---------------|
 | why did the | why did the man throw his watch out the window ? he wanted to see time fly ! |
-| can february march | can february march ? no , but april the way of the |
-| veto staircase build | veto staircase build ) do you 10 ? 's ? right cold ! |
+| can february march | can february march ? no , but april may |
+| veto staircase build | veto staircase build ) do you 10 ? 's ? right cold ! (This is just a test to see how the model handles random inputs)|
