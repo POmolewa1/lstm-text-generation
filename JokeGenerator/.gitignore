@@ -10,7 +10,10 @@ __pycache__/
 .idea/
 
 # saved model
-JokeGenerator/result/joke_generation_saves/model
+result/joke_generation_saves/model/*.pth
 
+# saved results
+result/joke_generation_saves/outputs
+ 
 # glove data
 data/joke_generation_data/*.txt
